@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name: string;        // variavel name do tipo string
-  email: string;          // variavel email do tipo string
-  phoneNumber: number;     // variavel phoneNumber do tipo number
+  name: string | undefined  
+  email: string | undefined   
+  phoneNumber: number | undefined
 }
