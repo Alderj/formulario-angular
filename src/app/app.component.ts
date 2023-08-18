@@ -9,4 +9,9 @@ export class AppComponent {
   name: string | undefined  
   email: string | undefined   
   phoneNumber: number | undefined
+
+  sendValues(){
+    console.log(this.name, this.email, this.phoneNumber);
+    
+  }
 }
