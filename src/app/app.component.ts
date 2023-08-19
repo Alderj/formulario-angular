@@ -26,6 +26,8 @@ export class AppComponent {
 
   sendValues(){
     console.log(this.name.value, this.email.value, this.phoneNumber.value);
+
+    this.form.reset();
   }
 
 }
