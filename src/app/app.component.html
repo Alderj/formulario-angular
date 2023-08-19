@@ -2,25 +2,25 @@
         flex-direction: column; justify-content: center;
         align-items: center;">
 
-    <div style="width: 100vw; height: 100vh; display: flex;
+    <div [formGroup]="form" style="width: 100vw; height: 100vh; display: flex;
         flex-direction: column; justify-content: center;
         align-items: center; gap: 10px;">
 
         <mat-form-field appearance="fill">
             <mat-label>Nombre</mat-label>
-            <input matInput [formControl]="name">          
+            <input matInput formControlName="name">          
         </mat-form-field>
         <p>{{ name.value }}</p>
 
         <mat-form-field appearance="fill">
             <mat-label>Email</mat-label>
-            <input matInput [formControl]="email">
+            <input matInput formControlName="email">
         </mat-form-field>
         <p>{{ email.valid }}</p>
 
         <mat-form-field appearance="fill">
             <mat-label>Telefone</mat-label>
-            <input matInput [formControl]="phoneNumber">
+            <input matInput formControlName="phoneNumber">
         </mat-form-field>
         <p>{{ phoneNumber.value }}</p>
 
