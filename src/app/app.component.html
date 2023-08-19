@@ -12,20 +12,19 @@
        
             
         </mat-form-field>
-        <p>{{ name.value }}</p>
+       
 
         <mat-form-field appearance="fill">
             <mat-label>Email</mat-label>
             <input matInput formControlName="email">
         </mat-form-field>
-        <p>{{ email.valid }}</p>
+        
 
         <mat-form-field appearance="fill">
             <mat-label>Telefone</mat-label>
             <input matInput formControlName="phoneNumber">
         </mat-form-field>
-        <p>{{ phoneNumber.value }}</p>
-
+       
         <button mat-button color="primary" (click)="sendValues()" [disabled]="form.invalid">Enviar</button>     
 
     </div>
