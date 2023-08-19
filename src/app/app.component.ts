@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,12 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name: string | undefined  
-  email: string | undefined   
-  phoneNumber: number | undefined
+ 
+  name: FormControl = new FormControl('');
+  email: FormControl = new FormControl('');
+  phoneNumber: FormControl = new FormControl('');
 
-  sendValues(){
-    console.log(this.name, this.email, this.phoneNumber);
-    
-  }
 }

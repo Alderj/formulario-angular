@@ -1,10 +1,29 @@
-<label>Nombre:</label>
-<input type="text" [(ngModel)]="name">
-<label>Email:</label>
-<input type="text" [(ngModel)]="email">
-<label>Telefone:</label>
-<input type="number" [(ngModel)]="phoneNumber">
+<div style="width: 100vw; height: 100vh; display: flex;
+        flex-direction: column; justify-content: center;
+        align-items: center;">
 
-{{ name }} - {{ email }} - {{ phoneNumber }}
+    <div style="width: 100vw; height: 100vh; display: flex;
+        flex-direction: column; justify-content: center;
+        align-items: center; gap: 10px;">
 
-<button (click)="sendValues()"> Enviar</button>
+        <mat-form-field appearance="fill">
+            <mat-label>Nombre</mat-label>
+            <input matInput [formControl]="name">
+            <p>{{ name.value }}</p>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput [formControl]="email">
+            <p>{{ email.value }}</p>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Telefone</mat-label>
+            <input matInput [formControl]="phoneNumber">
+            <p>{{ phoneNumber.value }}</p>
+        </mat-form-field>
+
+    </div>
+
+</div>
