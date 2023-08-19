@@ -13,7 +13,7 @@ export class AppComponent {
   phoneNumber: FormControl = new FormControl('');
 
   sendValues(){
-    
+    console.log(this.name.value, this.email.value, this.phoneNumber.value);
   }
 
 }

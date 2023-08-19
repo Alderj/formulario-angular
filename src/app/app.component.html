@@ -8,23 +8,23 @@
 
         <mat-form-field appearance="fill">
             <mat-label>Nombre</mat-label>
-            <input matInput [formControl]="name">
-            <p>{{ name.value }}</p>
+            <input matInput [formControl]="name">          
         </mat-form-field>
+        <p>{{ name.value }}</p>
 
         <mat-form-field appearance="fill">
             <mat-label>Email</mat-label>
             <input matInput [formControl]="email">
-            <p>{{ email.value }}</p>
         </mat-form-field>
+        <p>{{ email.value }}</p>
 
         <mat-form-field appearance="fill">
             <mat-label>Telefone</mat-label>
             <input matInput [formControl]="phoneNumber">
-            <p>{{ phoneNumber.value }}</p>
         </mat-form-field>
+        <p>{{ phoneNumber.value }}</p>
 
-        <button mat-button color="primary" (click)="sendValues()">Enviar</button>
+        <button mat-button color="primary" (click)="sendValues()">Enviar</button>     
 
     </div>
 
