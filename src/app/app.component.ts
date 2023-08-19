@@ -12,4 +12,8 @@ export class AppComponent {
   email: FormControl = new FormControl('');
   phoneNumber: FormControl = new FormControl('');
 
+  sendValues(){
+    
+  }
+
 }
