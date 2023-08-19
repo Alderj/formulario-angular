@@ -8,8 +8,8 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class AppComponent {
  
-  name: FormControl = new FormControl('');
-  email: FormControl = new FormControl('');
+  name: FormControl = new FormControl('', Validators.required);
+  email: FormControl = new FormControl('', [Validators.email, Validators.required]);
   phoneNumber: FormControl = new FormControl('');
 
   sendValues(){
